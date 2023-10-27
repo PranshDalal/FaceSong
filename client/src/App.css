@@ -1,84 +1,54 @@
-body {
+.app-container {
+  text-align: center;
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-color: #f1f1f1;
-}
-
-.header {
-  font-size: 2.5rem;
+.app-title {
+  color: #007bff;
+  font-size: 28px;
   margin-bottom: 20px;
 }
 
-.game-container {
+.video-container {
+  margin: 20px 0;
+}
+
+video {
+  max-width: 100%;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.button-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 300px;
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  margin: 20px 0;
 }
 
-.game-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.question {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-}
-
-input {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
-}
-
-.submit-btn {
+.capture-button {
   background-color: #007bff;
   color: #fff;
+  font-size: 18px;
   border: none;
-  padding: 8px 16px;
-  border-radius: 4px;
+  padding: 10px 20px;
+  margin: 0 10px;
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: background-color 0.3s ease;
 }
 
-.submit-btn:hover {
+.capture-button:hover {
   background-color: #0056b3;
 }
 
-.response-message {
-  margin-top: 10px;
+.emotion-text {
+  font-size: 18px;
+  margin: 20px 0;
+  color: #333;
+}
+
+.emotion {
+  color: #007bff;
   font-weight: bold;
-}
-
-.board {
-  display: grid;
-  grid-template-columns: repeat(3, 50px);
-  grid-gap: 4px;
-  margin-top: 20px;
-}
-
-.cell {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50px;
-  font-size: 1.5rem;
-  background-color: #eee;
-  border: 1px solid #ccc;
-  cursor: pointer;
 }
