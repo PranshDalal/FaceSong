@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import axios from 'axios';
 import EmotionVideo from './components/EmotionVideo';
-import './App.css'; // Import your CSS file
+import './App.css'; 
 
 function App() {
   const [emotion, setEmotion] = useState('');
@@ -22,7 +22,7 @@ function App() {
       formData.append('image', blob);
 
       try {
-        const response = await axios.post('http://localhost:5000/predict_emotion', formData, {
+        const response = await axios.post('https://facesongserver1.onrender.com/predict_emotion', formData, {
           headers: {
             'Content-Type': 'multipart/form-data',
           },
